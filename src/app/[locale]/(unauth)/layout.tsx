@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
@@ -34,6 +36,17 @@ export default function Layout(props: { children: React.ReactNode }) {
             >
               {t('portfolio_link')}
             </Link>
+
+            <li>
+              <button
+                type="button"
+                onClick={() => {
+                  throw new Error('Sentry Frontend Error');
+                }}
+              >
+                Throw error to test Sentry
+              </button>
+            </li>
           </li>
         </>
       }
