@@ -36,17 +36,14 @@ export default function Layout(props: { children: React.ReactNode }) {
             >
               {t('portfolio_link')}
             </Link>
-
-            <li>
-              <button
-                type="button"
-                onClick={() => {
-                  throw new Error('Sentry Frontend Error');
-                }}
-              >
-                Throw error to test Sentry
-              </button>
-            </li>
+          </li>
+          <li>
+            <Link
+              href="/abc/"
+              className="border-none text-gray-700 hover:text-gray-900"
+            >
+              {t('dashboard_link')}
+            </Link>
           </li>
         </>
       }

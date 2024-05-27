@@ -29,7 +29,7 @@ const Portfolio = () => {
             key={elt}
             href={`/portfolio/${elt}`}
           >
-            {t('portfolio_name', { name: elt })}
+            c{t('portfolio_name', { name: elt })}
           </Link>
         ))}
       </div>

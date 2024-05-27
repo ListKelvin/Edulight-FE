@@ -5,7 +5,8 @@
     "guestbook_link": "Guestbook",
     "portfolio_link": "Portfolio",
     "sign_in_link": "Sign in",
-    "sign_up_link": "Sign up"
+    "sign_up_link": "Sign up",
+    "dashboard_link": "Dashboard"
   },
   "BaseTemplate": {
     "description": "Starter Base for EduLight platform",
@@ -61,6 +62,9 @@
   },
   "UserProfile": {
     "meta_title": "User Profile"
+  },
+  "Dashboard2": {
+    "meta_title": "Dashboard 2"
   },
   "DashboardLayout": {
     "dashboard_link": "Dashboard",

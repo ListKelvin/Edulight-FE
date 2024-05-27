@@ -10,9 +10,11 @@ export const Env = createEnv({
   },
   client: {
     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z.string().min(1),
+    NEXT_PUBLIC_MOCK_API: z.string().min(1),
   },
   // You need to destructure all the keys manually
   runtimeEnv: {
+    NEXT_PUBLIC_MOCK_API: process.env.NEXT_PUBLIC_MOCK_API,
     CLERK_SECRET_KEY: process.env.CLERK_SECRET_KEY,
     LOGTAIL_SOURCE_TOKEN: process.env.LOGTAIL_SOURCE_TOKEN,
     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY:
